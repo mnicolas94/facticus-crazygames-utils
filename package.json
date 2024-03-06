@@ -2,7 +2,7 @@
   "name": "com.facticus.crazygames-utils",
   "version": "0.2.2",
   "displayName": "CrazyGames Utils",
-  "description": "Estensions to CrazyGames SDK",
+  "description": "Extensions to CrazyGames SDK",
   "unity": "2022.3",
   "unityRelease": "",
   "dependencies": {},
