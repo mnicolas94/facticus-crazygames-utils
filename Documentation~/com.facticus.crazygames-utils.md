@@ -1,0 +1,1 @@
+Estensions to CrazyGames SDK

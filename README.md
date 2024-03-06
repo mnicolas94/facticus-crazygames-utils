@@ -1,6 +1,6 @@
-# {{FRIENDLY_NAME}}
+# CrazyGames Utils
 
-{{DESCRIPTION}}
+Estensions to CrazyGames SDK
 
 ## License
 

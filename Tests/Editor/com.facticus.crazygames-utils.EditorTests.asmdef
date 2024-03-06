@@ -1,0 +1,11 @@
+{
+  "name": "com.facticus.crazygames-utils.Editor.Tests",
+  "references": [
+    "com.facticus.crazygames-utils"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}
