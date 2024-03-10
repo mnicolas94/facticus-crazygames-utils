@@ -1,6 +1,9 @@
 {
     "name": "com.facticus.crazygames-utils.Editor",
-    "references": [],
+    "rootNamespace": "",
+    "references": [
+        "GUID:e951fbccc008b8d42b26610e57fd987b"
+    ],
     "includePlatforms": [
         "Editor"
     ],

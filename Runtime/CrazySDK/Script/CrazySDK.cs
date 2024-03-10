@@ -27,6 +27,8 @@ namespace CrazyGames
 
     public class CrazySDK : Singleton<CrazySDK>
     {
+        public const string SettingsResourceName = "CrazyGamesSettings";
+        
         public static string sdkVersion = "4.17.0";
         public bool debug;
         private bool adblockDetectionExecuted;
@@ -207,11 +209,11 @@ namespace CrazyGames
             }
 
             settingsLoaded = true;
-            crazySettings = Resources.Load<CrazySettings>("CrazyGamesSettings");
+            crazySettings = Resources.Load<CrazySettings>(SettingsResourceName);
             if (crazySettings == null)
             {
                 Debug.LogError(
-                    "Missing CrazySDK/Resources/CrazyGamesSettings file. Please be sure you imported the SDK correctly.");
+                    $"Missing CrazySDK/Resources/{SettingsResourceName} file. Please be sure you imported the SDK correctly.");
                 return null;
             }
 

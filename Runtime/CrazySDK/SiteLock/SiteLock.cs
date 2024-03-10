@@ -255,7 +255,7 @@ namespace CrazyGames
             }
 
             _settingsLoaded = true;
-            _crazySettings = Resources.Load<CrazySettings>("CrazyGamesSettings");
+            _crazySettings = Resources.Load<CrazySettings>(CrazySDK.SettingsResourceName);
             if (_crazySettings == null)
             {
                 Debug.LogError(
