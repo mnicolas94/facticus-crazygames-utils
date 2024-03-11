@@ -157,7 +157,6 @@ namespace CrazyGames
             }
 
             // check current host against each of the given hosts
-            Debug.Log($"Application.absoluteURL: {Application.absoluteURL}");
             var hostRegex = new Regex(@"^(\w+)://(?<hostname>[^/]+?)(?<port>:\d+)?/");
             var match = hostRegex.Match(Application.absoluteURL);
             if (!match.Success)
@@ -165,7 +164,6 @@ namespace CrazyGames
                 return false;
 
             var hostname = match.Groups["hostname"].Value;
-            Debug.Log("hostname = " + hostname);
             var splittedHost = hostname.Split("."[0]);
             return hosts.Any(host => DoesHostMatch(host, splittedHost));
         }
@@ -174,8 +172,6 @@ namespace CrazyGames
         {
             var splitAllowed = allowedHost.Split("."[0]);
             
-            Debug.Log($"comparing: {allowedHost} vs {string.Join('.', applicationHost)}");
-
             if (applicationHost.Length < splitAllowed.Length) return false;
 
             for (var i = 0; i < splitAllowed.Length; i++)
