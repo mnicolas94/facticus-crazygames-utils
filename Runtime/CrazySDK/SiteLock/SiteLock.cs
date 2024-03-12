@@ -58,6 +58,9 @@ namespace CrazyGames
             return;
 #endif
 
+            var url = Application.absoluteURL;
+            Debug.Log($"Checking whether url is whitelisted: {url}");
+            
             if (IsOnWhitelistedDomain())
             {
                 // if the game is running on dev's domain, don't proceed further with the sitelock
@@ -66,7 +69,6 @@ namespace CrazyGames
 
             DebugLog("[CrazySDK] SiteLock v" + sitelockVersion);
 
-            var url = Application.absoluteURL;
             Uri uri;
             if (!Uri.TryCreate(url, UriKind.Absolute, out uri))
             {
