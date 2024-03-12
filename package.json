@@ -1,6 +1,6 @@
 {
   "name": "com.facticus.crazygames-utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "displayName": "CrazyGames Utils",
   "description": "Extensions to CrazyGames SDK",
   "unity": "2022.3",
